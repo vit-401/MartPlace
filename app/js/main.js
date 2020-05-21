@@ -19,8 +19,16 @@ $(function () {
     
     
   });
+  $(".newPlagins__rating").rateYo({
+    rating: 4.5,
+    readOnly: true,
+    starWidth: "11px",
+    
+    
+  });
 
-  var mixer = mixitup('.container');
+
+  var mixer = mixitup('.newPlagins__inner');
 
 
 });
