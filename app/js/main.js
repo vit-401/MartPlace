@@ -3,9 +3,21 @@ $(function () {
   $('.suggest__slider-inner').slick({
     slidesToShow: 1,
     arrows: true,
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>',
   })
+
+  $('.followers-slider__inner').slick({
+    slidesToShow: 3,
+    arrows: true,
+  })
+
+    $('.clients__inner').slick({
+    slidesToShow: 2,
+    prevArrow:'<button type="button" class="slick-clients-arrow clients-prev-arrow"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow:'<button type="button" class="slick-clients-arrow clients-next-arrow"><span class="lnr lnr-chevron-right"></span></button>',
+  })
+
+
+  
 
   $('.newProduct-link').on('click', function () {
     $(this).toggleClass('active_btn');

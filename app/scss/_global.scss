@@ -20,15 +20,30 @@ li {
   padding: 0;
   list-style: none;
 }
-body{
+
+body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
 }
 
-.container{
+.container {
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
 
+  span {
+    color: #1D81EE;
+  }
+}
+.text {
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  color: #555555;
+}

@@ -664,6 +664,7 @@
   }
 
   button {
+    cursor: pointer;
     font-size: 15px;
     background-color: #f1f3f6;
     border: none;
@@ -786,4 +787,310 @@
   float: right;
 }
 
+
+.newPlagins-link {
+  background-color: $btn-blue;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 32px;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+  max-width: 190px;
+  padding: 20px 2px;
+  display: block;
+}
+
 // end newPlagins
+// start followers
+
+.followers {
+  background-color: $grey;
+  padding: 119px 0;
+
+  .suggest__btn-slider {
+    background-color: $btn-blue;
+  }
+}
+
+
+// end followers
+// start skils
+
+
+.skils {
+  background-color: rgba(12, 14, 18, .9);
+  padding: 90px 0;
+}
+
+.skils__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skils__item {
+  text-align: center;
+}
+
+.briefcase {
+  color: #feb71d;
+}
+
+.download {
+  color: #58c9e9;
+}
+
+.smile {
+  color: #77de51;
+}
+
+.users {
+  color: #ff6a6d;
+}
+
+.lnr {
+  font-size: 48px;
+}
+
+.skils__item-icon {
+  margin-bottom: 40px;
+}
+
+.skils__item-number {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.skils__item-title {
+  font-size: 18px;
+  color: #fff;
+}
+
+// end skils
+// start abilities
+
+.abilities {
+  background-color: #fff;
+  padding: 110px 0 85px;
+  text-align: center;
+
+  &__text {
+    margin: 0 auto;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.abilities__item {
+  margin-bottom: 30px;
+  max-width: 361px;
+  width: 100%;
+  padding: 8px 34px 50px 15px;
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+
+  &-nuber {
+    font-weight: 300;
+    color: #DFE7FE;
+    font-size: 48px;
+    text-align: left;
+  }
+
+  &-icon {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  &-title {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+
+  &-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+
+  }
+}
+
+.abilities__desc {
+  padding-left: 15px;
+}
+
+
+// end abilities
+// start marketing
+.marketing {
+  height: 565px;
+
+  &__inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.marketing__item {
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #0674ec;
+  opacity: .9;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+
+  &-icon {
+    margin-top: 95px;
+    margin-bottom: 43px;
+    background-image: url(../images/icons/marceting-icon1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    fill: #fff;
+    width: 120px;
+    height: 100px;
+  }
+
+  &-title {
+    margin-bottom: 20px;
+    max-width: 566px;
+    font-size: 36px;
+  }
+
+  &-text {
+    text-align: center;
+    max-width: 566px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &-link {
+    padding: 20px 25px;
+    background-color: #fff;
+    color: $btn-blue;
+    border-radius: 32px;
+  }
+}
+
+// end marketing
+// start clients
+.clients {
+  padding: 115px 0;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.clients__item {
+  max-width: 555px;
+  border-left: 2px solid $btn-blue;
+  padding: 50px 40px;
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  &__text {
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+  }
+}
+
+.clients-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.data-clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+
+  &__title {
+    margin-left: 16px;
+    font-size: 20px;
+
+    span {
+      margin-top: 8px;
+      display: block;
+      font-size: 16px;
+      color: #555555;
+    }
+  }
+
+  &__icon {
+    color: #e8e8e8;
+    font-size: 60px;
+  }
+}
+
+.clients__inner {
+  position: relative;
+}
+
+.slick-clients-arrow {
+  z-index: 5;
+  bottom: 140px;
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 4px 15px 0px rgba(67, 67, 67, 0.15);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  ;
+
+  span {
+    font-size: 14px;
+    color: $btn-blue;
+
+  }
+}
+
+.clients-next-arrow{
+  right: -23px;
+}
+
+.clients-prev-arrow{
+  left: -23px;
+}
+
+
+
+
+// end clients
