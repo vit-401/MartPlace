@@ -38,6 +38,31 @@ $(function () {
     
     
   });
+  $(".page-content__rateYo").rateYo({
+    rating: 3.2,
+    readOnly: true,
+    starWidth: "14px"
+  });
+
+  $('.btn-grid').on('click',function(){
+    $(this).addClass('active')
+    $('.btn-list').removeClass('active')
+  })
+  $('.btn-list').on('click',function(){
+    $(this).addClass('active'),
+    $('.btn-grid').removeClass('active')
+  })
+
+  $(".range-slider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    min: 0,
+    max: 320,
+    from: 30,
+    to: 300,
+    prefix: "$",
+});
+  
 
 
   var mixer = mixitup('.newPlagins__inner');

@@ -7,7 +7,7 @@ html {
 *::after {
   box-sizing: inherit;
   margin: 0;
-	padding: 0;
+  padding: 0;
 }
 
 a {
@@ -23,24 +23,68 @@ li {
   list-style: none;
 }
 
+html,
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
   height: 100%;
 }
 
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
-.content {
-	flex: 1 0 auto;
-}
-.footer {
-	flex: 0 0 auto;
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.breadcrumbs {
+
+  &__inner {
+    margin-top: 34px;
+  }
+
+  &__list {
+    a {
+      color: #fff;
+    }
+
+    li {
+      display: inline-block;
+      position: relative;
+      font-size: 15px;
+
+      &+li {
+        padding-left: 17px;
+
+        &::before {
+          content: '/';
+          position: absolute;
+          left: 0;
+          color: #bfcad7;
+          font-size: 15px;
+        }
+      }
+
+      &:last-child {
+
+        a,
+        span {
+          color: #bfcad7;
+        }
+      }
+    }
+  }
+}
 
 .container {
   width: 1170px;
@@ -56,6 +100,7 @@ body {
     color: #1D81EE;
   }
 }
+
 .text {
   max-width: 700px;
   font-size: 16px;
