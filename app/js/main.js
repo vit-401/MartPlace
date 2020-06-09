@@ -47,9 +47,11 @@ $(function () {
   $('.btn-grid').on('click',function(){
     $(this).addClass('active')
     $('.btn-list').removeClass('active')
+    $('.page-content__item').removeClass('active')
   })
   $('.btn-list').on('click',function(){
     $(this).addClass('active'),
+    $('.page-content__item').addClass('active'),
     $('.btn-grid').removeClass('active')
   })
 
